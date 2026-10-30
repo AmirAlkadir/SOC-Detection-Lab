@@ -79,7 +79,16 @@ Testing was conducted in a controlled laboratory. Negative-test results are limi
 
 ## Evidence
 
-Screenshots of endpoint telemetry, detection alerts, and investigation findings were captured during testing. Selected redacted evidence will be added after privacy review.
+The following screenshots show alerts generated during controlled security simulations.
+
+### Repeated Failed Login Detection
+![Repeated Failed Login Alert](Public-Evidence/failed-login-detection.png)
+
+### Suspicious PowerShell Detection
+![Suspicious PowerShell Alert](Public-Evidence/powershell-detection.png)
+
+### Unusual Process Detection
+![Unusual Parent-Child Process Alert](Public-Evidence/process-detection.png)
 
 ## Key Skills Demonstrated
 
@@ -97,4 +106,5 @@ Screenshots of endpoint telemetry, detection alerts, and investigation findings 
 ## Disclaimer
 
 All simulations were conducted in an authorized local laboratory environment. The project does not demonstrate unauthorized access or actual compromise.
+
 
