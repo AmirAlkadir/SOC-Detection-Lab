@@ -1,0 +1,11 @@
+<group name="soc_lab,powershell,">
+  <rule id="100101" level="8">
+    <if_sid>91802</if_sid>
+    <field name="win.eventdata.scriptBlockText" type="pcre2">(?i)\b(?:Invoke-Expression|IEX)\b</field>
+    <description>SOC-LAB: Suspicious PowerShell dynamic code execution detected</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+    <group>soc_lab,powershell_execution,</group>
+  </rule>
+</group>

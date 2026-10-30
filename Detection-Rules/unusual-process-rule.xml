@@ -1,0 +1,12 @@
+<group name="soc_lab,sysmon,process_creation,">
+  <rule id="100102" level="10">
+    <if_group>sysmon_event1</if_group>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)\\WINWORD\.EXE$</field>
+    <field name="win.eventdata.image" type="pcre2">(?i)\\powershell\.exe$</field>
+    <description>SOC-LAB: Microsoft Word spawned PowerShell - suspicious process relationship</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+    <group>soc_lab,suspicious_process,</group>
+  </rule>
+</group>

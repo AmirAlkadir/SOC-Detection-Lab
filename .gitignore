@@ -1,0 +1,39 @@
+﻿# Sensitive credentials and backups
+Secrets/
+Backups/
+*.key
+*.pem
+*.p12
+*.pfx
+client.keys
+.env
+.env.*
+!.env.example
+
+# Local Wazuh deployment and configuration
+Wazuh/
+
+# Test executables and binaries
+Process-Test/
+*.exe
+*.dll
+
+# Temporary files and system artifacts
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+
+# Additional local-only files
+/Documented-Screenshots/Screenshot 2026-10-29 221630.png
+/Incident-Reports/incident-001-failed-logins.md.txt
+/Sysmon/Eula.txt
+/wazuh-agent-before-sysmon.xml
+
+# Screenshots pending manual privacy review
+/Documented-Screenshots/
